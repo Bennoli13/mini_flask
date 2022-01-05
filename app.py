@@ -33,7 +33,6 @@ def send_static(path):
     return send_from_directory('static', path)                           
                              
                              
-
 if __name__ == "__main__":
     app.secret_key = 'super secret key'
     app.config['SESSION_TYPE'] = 'filesystem'
@@ -42,4 +41,4 @@ if __name__ == "__main__":
     sess.init_app(app)
 
     app.debug = True
-    app.run(host='0.0.0.0',port=5002, debug=True)
+    app.run(host='0.0.0.0',port=5001, debug=True)
