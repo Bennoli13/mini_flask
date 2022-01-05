@@ -28,7 +28,7 @@ def upload_file():
         message=" uploaded successfully"
         return f.filename+message
 
-@app.route('/<path:path>', methods=['GET'])
+@app.route('/static/<path:path>', methods=['GET'])
 def send_static(path):
     return send_from_directory('static', path)                           
                              
